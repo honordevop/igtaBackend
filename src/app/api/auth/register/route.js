@@ -2,7 +2,6 @@ import Users from "@/models/Users";
 import connect from "@/Utils/db";
 import { NextResponse } from "next/server";
 import bcrypt from "bcryptjs";
-import Trade from "@/models/Posts";
 
 export const POST = async (request) => {
   const {

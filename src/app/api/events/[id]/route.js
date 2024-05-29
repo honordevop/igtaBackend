@@ -1,6 +1,4 @@
 import { NextResponse } from "next/server";
-import Trade from "@/models/Trade";
-import Users from "@/models/Users";
 import connect from "@/Utils/db";
 import Events from "@/models/Events";
 
