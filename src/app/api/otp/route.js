@@ -7,7 +7,7 @@ import nodemailer from "nodemailer";
 export const POST = async (request) => {
   const requestData = await request.json();
   const { email } = requestData;
-  console.log(email);
+  // console.log(email);
   const otpGenerate = () => {
     const min = 100000;
     const max = 999999;
@@ -56,7 +56,6 @@ export const POST = async (request) => {
       },
     });
 
-    console.log(process.env.PASSWORD);
     const mailOption = {
       from: "info@ornorit.com.ng",
       to: `${email}`,

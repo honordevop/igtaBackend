@@ -58,7 +58,7 @@ const PasswordResetOtp = ({ showPasswordForm, hideOtpForm, email }) => {
       }
       //   }, 4000);
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       setLoading(false);
       toast.warn(error.message);
     }

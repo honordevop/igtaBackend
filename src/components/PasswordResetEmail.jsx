@@ -48,7 +48,7 @@ const PasswordResetEmail = ({
       }
       //   }, 4000);
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       setLoading(false);
       toast.warn(error.message);
     }

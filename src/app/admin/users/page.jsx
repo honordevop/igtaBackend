@@ -62,8 +62,8 @@ const Dashboard = () => {
       setUsersList(res.users);
     } catch (error) {
       // setError(error?.response);
-      // toast(error?.response.message);
-      console.log(error);
+      toast(error?.response.message);
+      // console.log(error);
     }
   };
 
@@ -71,7 +71,7 @@ const Dashboard = () => {
     fetchEventData();
   }, [session?.user?.email]);
 
-  console.log(usersList);
+  // console.log(usersList);
 
   useEffect(() => {
     if (usersList.length >= 1) {

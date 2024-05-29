@@ -62,7 +62,7 @@ const Dashboard = () => {
     // };
   }, [session?.user?.email]);
 
-  console.log(pageLoading);
+  // console.log(pageLoading);
 
   // console.log(userData.user);
 
